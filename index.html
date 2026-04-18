@@ -594,7 +594,7 @@ openingStage.addEventListener('click',openInvitation);
 openingStage.addEventListener('touchstart',function(e){e.preventDefault();openInvitation();},{passive:false});
 
 /* ════ COUNTDOWN ════ */
-function updateCountdown(){var diff=Math.max(0,new Date('2026-04-13T18:00:00')-new Date());document.getElementById('cd-d').textContent=String(Math.floor(diff/864e5)).padStart(2,'0');document.getElementById('cd-h').textContent=String(Math.floor(diff%864e5/36e5)).padStart(2,'0');document.getElementById('cd-m').textContent=String(Math.floor(diff%36e5/6e4)).padStart(2,'0');document.getElementById('cd-s').textContent=String(Math.floor(diff%6e4/1e3)).padStart(2,'0');}
+function updateCountdown(){var diff=Math.max(0,new Date('2026-12-25T12:00:00')-new Date());document.getElementById('cd-d').textContent=String(Math.floor(diff/864e5)).padStart(2,'0');document.getElementById('cd-h').textContent=String(Math.floor(diff%864e5/36e5)).padStart(2,'0');document.getElementById('cd-m').textContent=String(Math.floor(diff%36e5/6e4)).padStart(2,'0');document.getElementById('cd-s').textContent=String(Math.floor(diff%6e4/1e3)).padStart(2,'0');}
 updateCountdown();setInterval(updateCountdown,1000);
 
 /* ════ SCROLL & DOTS ════ */
